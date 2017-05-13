@@ -1,6 +1,6 @@
 
-def echo():
-    print('mod01')
+def myname():
+    return 'mod01'
 
 if __name__ == '__main__':
-    echo()
+    print(myname())

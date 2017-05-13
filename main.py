@@ -1,5 +1,7 @@
 
 from pkg01.mod01 import a
+from pkg01.mod02 import b
 
-a.echo()
+print(a.myname())
+print(b.myname())
 
