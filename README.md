@@ -11,3 +11,21 @@
 - relative import beyond top-level package error
     - "__main__" となる実行ファイルから見て、パッケージ間をまたいで相対インポートはできない
 
+```
+$ python main_02_relative_import_beyond_top-level_package_error.py
+Traceback (most recent call last):
+  File "main_02_relative_import_beyond_top-level_package_error.py", line 2, in <module>
+    from pkg01.mod04 import d
+  File "/Users/masakiiwamoto/tmp/py_test/pkg01/mod04/d.py", line 2, in <module>
+    from ...config import conf
+ValueError: attempted relative import beyond top-level package
+```
+
+```
+$ python pkg01/mod02/b.py
+Traceback (most recent call last):
+  File "pkg01/mod02/b.py", line 2, in <module>
+    from ..mod01 import a
+ValueError: attempted relative import beyond top-level package
+```
+
