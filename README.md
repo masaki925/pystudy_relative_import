@@ -8,6 +8,8 @@
 
 ## 相対インポート
 
+参考: https://docs.python.org/3.6/tutorial/modules.html#packages
+
 - relative import beyond top-level package error
     - "__main__" となる実行ファイルから見て、パッケージ間をまたいで相対インポートはできない
 
